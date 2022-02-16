@@ -1,6 +1,7 @@
 %matplotlib inline
 import matplotlib.pyplot as plt
 
+# Graph Rev 4
 input_values = [1,2,3,4,5]
 squares = [1,4,9,16,25]
 plt.style.use('ggplot')
@@ -16,4 +17,4 @@ ax.set_ylabel('Square of Values', fontsize = 14)
 ax.tick_params(axis='both', labelsize = 14)
 
 plt.show()
-fig.savefig('../outputs/mlp_output_main.png')
+fig.savefig('../outputs/mlp_output4.png', bbox_inches = 'tight')
