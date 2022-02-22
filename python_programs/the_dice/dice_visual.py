@@ -2,7 +2,7 @@
 from plotly.graph_objs import Bar, Layout
 from plotly import offline
 
-from die import Side
+from dice import Side
 
 # Creating a D6
 die = Side(6)
