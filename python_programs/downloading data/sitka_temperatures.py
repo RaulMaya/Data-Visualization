@@ -31,4 +31,4 @@ ax.set_ylabel('Temperature (°C)', fontsize = 14)
 ax.tick_params(axis='both', which='major', labelsize=12)
 
 plt.show()
-fig.savefig('outputs/sitka_temp.png', bbox_inches = 'tight')
+fig.savefig('../../outputs/downloading data/sitka_temp.png', bbox_inches = 'tight')
