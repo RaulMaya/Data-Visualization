@@ -1,3 +1,4 @@
+from fileinput import filename
 import json
 from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
@@ -24,7 +25,14 @@ for feature in eq_features:
     longitudes.append(longitude)
     latitudes.append(latitude)
 
-data = [Scattergeo(lon=longitudes, lat=latitudes)]
+data = [{
+    'type':'scattergeo',
+    'lon': longitudes, 
+    'lat': latitudes,
+    'marker':{
+        'size': [7 * mag for mag in magnitudes]
+    }}]
+        
 my_layout = Layout(title = {
          'text': "Global Earthquakes",
          'y':0.9,
@@ -34,4 +42,4 @@ my_layout = Layout(title = {
         })
 
 fig ={'data':data, 'layout':my_layout}
-offline.plot(fig, filename='global_earthquakes.html')
+offline.plot(fig, filename='global_earthqueakes.html')
