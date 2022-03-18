@@ -15,20 +15,24 @@ eq_features = earthquakes['features']
 magnitudes  = []
 longitudes  = []
 latitudes  = []
+hover_text = []
 
 for feature in eq_features:
     magnitude = feature['properties']['mag']
     longitude = feature['geometry']['coordinates'][0]
     latitude = feature['geometry']['coordinates'][1]
+    title = feature['properties']['title']
 
     magnitudes.append(magnitude)
     longitudes.append(longitude)
     latitudes.append(latitude)
+    hover_text.append(title)
 
 data = [{
     'type':'scattergeo',
     'lon': longitudes, 
     'lat': latitudes,
+    'text': hover_text,
     'marker':{
         'size': [3 * mag for mag in magnitudes],
         'color':magnitudes,
