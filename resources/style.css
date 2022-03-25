@@ -1,0 +1,78 @@
+.iframeContainer {
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+}
+
+/* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Padding bottom by footer height */
+  padding-bottom: 80px;
+  background-color: #FFF7BC;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Set the fixed height of the footer here */
+  height: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #050505;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 16px;
+  color:#ffffff
+}
+
+h1 {
+  font-size: calc( 1em + 10vmin );
+  font-weight: 900;
+  text-align:center;
+  color: #050505;
+  
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: #85C88A;
+  
+  text-shadow: 
+    
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+  
+}
+
+h2 {
+  color:#050505;
+  text-align:center;
+}
+
+p {
+  text-align: center;
+}
+
+
+.navbar{
+  background-color: #85C88A;
+}
+
+.nav-link{
+  color: black;
+}
+
