@@ -14,30 +14,39 @@ print(f"Total Repositories: {response['total_count']}")
 repositories = response['items']
 print(f"Founded Repositories: {len(repositories)}")
 # repository = repositories[0]
-repo_names = []
+# repo_names = []
+repo_links = []
 stared_repos = []
+hover_text = []
 for repository in repositories:
-    repo_names.append(repository['name'])
+    # repo_names.append(repository['name'])
     print(repository['name'])
     print(repository['owner']['login'])
+    owner = repository['owner']['login']
     stared_repos.append(repository['stargazers_count'])
     print(repository['stargazers_count'])
     print(repository['html_url'])
     print(repository['description'])
+    link2repo = f"<a href='{repository['html_url']}'>{repository['name']}</a>"
+    repo_links.append(link2repo)
+    description = repository['description']
+    hover_text.append(f"Owner: {owner}<br />About: {description}")
     print('')
 
 data = [{
     'type':'bar',
-    'x':repo_names,
+    'x':repo_links,
     'y':stared_repos,
+    'hovertext':hover_text,
     'marker':{
-        'color': 'rgb(255, 159, 69)',
-        'line':{'width': 3, 'color' : 'rgb(247, 110, 17)'}
+        'color': 'rgb(77, 119, 255)',
+        'line':{'width': 3, 'color' : 'rgb(51, 47, 208)'}
     }
 }]
 
 my_layout = {
     'title':'Most Stared Python Projects on GitHub',
+    'title_x':0.5,
     'titlefont':{'size':24},
     'xaxis': {'title':'Repository Name',
     'titlefont': {'size':20},
