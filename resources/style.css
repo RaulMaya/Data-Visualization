@@ -58,7 +58,20 @@ h1 {
   
 }
 
-h2 {
+.jumbotron{
+  position: relative;
+  padding:5px !important;
+  margin-top:20px !important;
+  background: #FFF89A;
+  margin-top: 20px;
+  text-align:center;
+  margin-bottom: 5px !important;
+  border:3px solid #050505;
+}
+.jumbotron .container-fluid{
+  padding:5px !important;
+}
+h2, h5 {
   color:#050505;
   text-align:center;
 }
@@ -74,5 +87,22 @@ p {
 
 .nav-link{
   color: black;
+}
+
+.btn{
+  position: relative;
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:5px;
+  color:#050505;
+  background-color: #85C88A;
+  transition-duration: 0.4s;
+  border:1px solid #050505;
+}
+
+.btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border:1px solid #050505;
 }
 
