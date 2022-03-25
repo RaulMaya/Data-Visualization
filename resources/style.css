@@ -59,10 +59,36 @@ h1 {
   
 }
 
+h6 {
+  font-size: calc( 1em + 5vmin );
+  font-weight: 900;
+  text-align:center;
+  color: #050505;
+  
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: #85C88A;
+  
+  text-shadow: 
+    
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+  
+}
+
 .jumbotron{
   position: relative;
   padding:5px !important;
-  margin-top:20px !important;
+  margin-top:5px !important;
   background: #FFF89A;
   margin-top: 20px;
   text-align:center;
@@ -72,7 +98,7 @@ h1 {
 .jumbotron .container-fluid{
   padding:5px !important;
 }
-h2, h5 {
+h2,h4,h5 {
   color:#050505;
   text-align:center;
 }
