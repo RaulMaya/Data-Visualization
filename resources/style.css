@@ -15,6 +15,7 @@ body {
   background-color: #FFF7BC;
 }
 
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -65,7 +66,7 @@ h1 {
   background: #FFF89A;
   margin-top: 20px;
   text-align:center;
-  margin-bottom: 5px !important;
+  margin-bottom: 30px !important;
   border:3px solid #050505;
 }
 .jumbotron .container-fluid{
@@ -106,3 +107,17 @@ p {
   border:1px solid #050505;
 }
 
+.img-thumbnail {
+  background-color: white;
+  border: 1px solid #050505;
+  border-radius: 4px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
