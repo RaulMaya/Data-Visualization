@@ -1,5 +1,5 @@
 # Importing Modules
-%matplotlib inline
+#%matplotlib inline
 import matplotlib.pyplot as plt
 from random import choice
 
@@ -46,7 +46,8 @@ while True:
 
     # Plotting points in the walk
     plt.style.use('classic')
-    fig, ax = plt.subplots(figsize=(20,12))
+    # fig, ax = plt.subplots(figsize=(20,12))
+    fig, ax = plt.subplots(figsize=(5,3))
     ax.set_facecolor('lightskyblue')
     point_num = range(rw.num_points)
     ax.plot(rw.x_values, rw.y_values, c='gold', linewidth = 1.5)
@@ -56,9 +57,9 @@ while True:
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
     
-    ax.set_title('Pollen Grain on the Surface of a Drop of Water')
+    ax.set_title('Pollen Grain on the Surface of a Drop of Water', fontsize = 10)
     plt.show()
-    fig.savefig('../outputs/random_walks/rw_output5.png')
+    fig.savefig('../../outputs/generating data/random_walks/rw_output5.png')
     
     continue_running = input('Make another run? (yes/no):')
     if continue_running == 'no':

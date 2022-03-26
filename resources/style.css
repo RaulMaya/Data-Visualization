@@ -90,9 +90,8 @@ h6 {
   padding:5px !important;
   margin-top:5px !important;
   background: #FFF89A;
-  margin-top: 20px;
   text-align:center;
-  margin-bottom: 30px !important;
+  margin-bottom: 50px !important;
   border:3px solid #050505;
 }
 .jumbotron .container-fluid{
@@ -145,5 +144,58 @@ p {
 }
 
 .img-thumbnail:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 2px 1px rgba(28, 180, 231, 0.5);
+}
+
+figure {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+figure:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+figure:hover img {
+  transform: scale(1.25);
+}
+figure:hover figcaption {
+  bottom: 0;
+}
+
+figure img {
+  height: 200;
+  transition: 0.25s;
+}
+figure figcaption {
+  text-align:center;
+  align-items: center;
+  position: absolute;
+  bottom: -70%;
+  width: 450px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+
+figure figcaption button {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
 }

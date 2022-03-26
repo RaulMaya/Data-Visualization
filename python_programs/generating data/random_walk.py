@@ -1,5 +1,5 @@
 # Importing Modules
-%matplotlib inline
+# %matplotlib inline
 import matplotlib.pyplot as plt
 from random import choice
 
@@ -46,7 +46,8 @@ while True:
 
     # Plotting points in the walk
     plt.style.use('classic')
-    fig, ax = plt.subplots(figsize=(20,12))
+    #fig, ax = plt.subplots(figsize=(20,12))
+    fig, ax = plt.subplots(figsize=(5,3))
     point_num = range(rw.num_points)
     ax.scatter(rw.x_values, rw.y_values, c=point_num, cmap=plt.cm.cool, edgecolors='none', s=2)
     
@@ -59,7 +60,7 @@ while True:
     ax.get_yaxis().set_visible(False)
     
     plt.show()
-    fig.savefig('../outputs/random_walks/rw_output4.png')
+    fig.savefig('../../outputs/generating data/random_walks/rw_output4.png')
     
     continue_running = input('Make another run? (yes/no):')
     if continue_running == 'no':
