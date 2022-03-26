@@ -19,16 +19,17 @@ with open(file_2) as f:
 
 
 plt.style.use('seaborn')
-fig, ax = plt.subplots(figsize=(10, 6), dpi=128)
+# fig, ax = plt.subplots(figsize=(10, 6), dpi=128)
+fig, ax = plt.subplots(figsize=(5,3))
 ax.plot(dates, highs, c='crimson', alpha=0.6)
 ax.plot(dates, lows, c='turquoise', alpha=0.6)
 ax.fill_between(dates, highs, lows, facecolor='royalblue', alpha=0.2)
 
-ax.set_title('Daily high and low temperatures of 2018', fontsize = 20)
-ax.set_xlabel('Date', fontsize = 14)
+ax.set_title('Daily high and low temperatures of 2018', fontsize = 12)
+ax.set_xlabel('Date', fontsize = 10)
 fig.autofmt_xdate()
-ax.set_ylabel('Temperature (°C)', fontsize = 14)
-ax.tick_params(axis='both', which='major', labelsize=12)
+ax.set_ylabel('Temperature (°C)', fontsize = 10)
+ax.tick_params(axis='both', which='major', labelsize=8)
 
 plt.show()
 fig.savefig('../../outputs/downloading data/sitka_temp.png', bbox_inches = 'tight')

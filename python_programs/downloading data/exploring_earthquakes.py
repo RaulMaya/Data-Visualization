@@ -42,7 +42,7 @@ data = [{
     }}]
         
 my_layout = Layout(title = {
-         'text': "Global Earthquakes",
+         'text': "<a href='https://github.com/RaulMaya/Data-Visualization/blob/master/python_programs/downloading%20data/exploring_earthquakes.py'>Global Earthquakes</a>",
          'y':0.9,
          'x':0.5,
          'xanchor': 'center',
