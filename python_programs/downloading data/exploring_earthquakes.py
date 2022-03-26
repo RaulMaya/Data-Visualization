@@ -41,7 +41,10 @@ data = [{
         'colorbar':{'title':'Magnitude'}
     }}]
         
-my_layout = Layout(title = {
+my_layout = Layout(
+    paper_bgcolor='rgba(0,0,0,0)', 
+    plot_bgcolor='rgba(0,0,0,0)',
+    title = {
          'text': "<a href='https://github.com/RaulMaya/Data-Visualization/blob/master/python_programs/downloading%20data/exploring_earthquakes.py'>Global Earthquakes</a>",
          'y':0.9,
          'x':0.5,
