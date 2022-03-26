@@ -29,5 +29,7 @@ data = [Bar(x=x_values,y=frec, marker=dict(color='rgba(101, 193, 140, 0.6)',line
 x_axis_config = {'title':'Result', 'dtick':1}
 y_axis_config = {'title':'Frecuency of Individual Value'}
 
-my_hist = Layout(title='Output of Rolling Three 6-Sided Dice 51500 Times',title_x=0.5, xaxis = x_axis_config, yaxis = y_axis_config, paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
+my_hist = Layout(
+    title="<a href='https://github.com/RaulMaya/Data-Visualization/blob/master/python_programs/generating%20data/the_dice/three_dice_visual.py'>Output of Rolling Three 6-Sided Dice 51500 Times</a>",
+    title_x=0.5, xaxis = x_axis_config, yaxis = y_axis_config, paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
 offline.plot({'data':data, 'layout':my_hist}, filename = 'three_six_sided.html')

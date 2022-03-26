@@ -102,6 +102,18 @@ h2,h4,h5 {
   text-align:center;
 }
 
+.display-5 {
+  color:#050505;
+  text-align:center;
+  font-size: 30px;
+}
+
+.lead-2 {
+  color:#050505;
+  text-align:center;
+  font-size: 15px;
+}
+
 p {
   text-align: center;
 }

@@ -39,13 +39,15 @@ data = [{
     'y':stared_repos,
     'hovertext':hover_text,
     'marker':{
-        'color': 'rgb(77, 119, 255)',
-        'line':{'width': 3, 'color' : 'rgb(51, 47, 208)'}
+        'color': 'rgb(215, 240, 150)',
+        'line':{'width': 3, 'color' : 'rgb(103, 186, 109)'}
     }
 }]
 
 my_layout = {
-    'title':'Most Stared Python Projects on GitHub',
+    'paper_bgcolor':'rgba(0,0,0,0)',
+    'plot_bgcolor':'rgba(0,0,0,0)',
+    'title':"<a href='https://github.com/RaulMaya/Data-Visualization/blob/master/python_programs/working%20with%20APIs/api_responses.py'>Most Stared Python Projects on GitHub</a>",
     'title_x':0.5,
     'titlefont':{'size':24},
     'xaxis': {'title':'Repository Name',
