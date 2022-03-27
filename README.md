@@ -48,6 +48,10 @@ In the second half of the, you'll put your new knowledge into practice with thre
 
 In this chapter, you'll learn to generate data sets and create visualizations of that data. You'll create simple plots with Matplotlib and use scatter plots to explore random walks. Also, you'll create a histogram with Plotly and use a histogram to explore the results of rolling three times a dice. Generating your own data sets with code is and interesting and powerful way, to model and explore a wide variety of real-world situations. As you continue to work thorough data visualization projects that follow, keep an eye out for situations you might be able to model with code. Look at visualizations you see in the news media, and see if you can identify those that were generated using methods similar to the ones you're learning in these projects.
 
+Squares Graph             |  Pollen Grain on the Surface
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/RaulMaya/Data-Visualization/master/outputs/generating%20data/scatter_squares/scatter_output7.png)  |  ![](https://raw.githubusercontent.com/RaulMaya/Data-Visualization/master/outputs/generating%20data/random_walks/rw_output5.png)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -55,6 +59,11 @@ In this chapter, you'll learn to generate data sets and create visualizations of
 ### Downloading Data
 
 In this chapter, you'll learn to work with real-world data sets and process CSV and JSON files. You'll use historical weather data, to learn more about Matplotlib and its capabilities, including how to use the datetime module, and how to plot multiple data series on one chart. Also, you'll learn how to plot geographical data, by using Plotly maps. As you gain experience working with CSV and JSON files, you'll be able to process almost any data you want to analyze. You can download most online data sets in either or both these formats. By working with these formats, you'll be able to learn how to work with other data formats more easily as well.
+
+Sitka Temperatures             |  Death Valley Temperatures
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/RaulMaya/Data-Visualization/master/outputs/downloading%20data/sitka_temp.png)  |  ![](https://raw.githubusercontent.com/RaulMaya/Data-Visualization/master/outputs/downloading%20data/death_valley.png)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
