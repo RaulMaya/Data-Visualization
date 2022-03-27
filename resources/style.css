@@ -102,6 +102,13 @@ h2,h4,h5 {
   text-align:center;
 }
 
+h3 {
+  color:#ffffff;
+  text-align:center;
+  font-size: 25px;
+  margin-bottom: 25px
+}
+
 .display-5 {
   color:#050505;
   text-align:center;
@@ -190,7 +197,7 @@ figure figcaption {
   text-align:center;
   align-items: center;
   position: absolute;
-  bottom: -70%;
+  bottom: -50%;
   width: 450px;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.85);
@@ -200,16 +207,24 @@ figure figcaption {
   transition: 0.25s;
 }
 
-figure figcaption button {
+.button {
   position: relative;
   align-items: center;
   justify-content: center;
-  padding: 10px 30px;
-  background-color: #1abc9c;
-  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  color: white;
   font-size: 14px;
   margin-left: 10px;
   margin-right: 10px;
+  transition-duration: 0.4s;
+  color:#050505;
+  background-color: #85C88A;
+  border:1px solid #050505;
+}
+
+
+.button:hover {
+background-color: #4CAF50; /* Green */
+color: white;
+border:1px solid #050505;
 }
